@@ -1,0 +1,312 @@
+@font-face {
+    font-family: distantgalaxy;
+    src: url('../../fonts/Distant-Galaxy/DISTGRG_.ttf');
+}
+
+
+.jupiter{
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 105%;
+  background-color: transparent;
+  border-radius: 100%;
+  transform: translate(-2.5%,0);
+  overflow: hidden;
+}
+
+.projector1{
+  position: absolute;
+  display: inline-block;
+  top: 44.6%;
+  left: 10%;
+  z-index: 20;
+  width: 30%;
+  height: 31%;
+  background: linear-gradient(to top right, #F9564F, transparent);
+  clip-path: polygon(51% 0%, 22% 42%, 100% 0);
+  animation: projector1anim 3s alternate linear infinite;
+}
+
+@keyframes projector1anim{
+  0% {opacity: 1}
+  100% {opacity: 0.2}
+}
+
+.projector2{
+  position: absolute;
+  display: inline-block;
+  top: 44.6%;
+  left: 10%;
+  width: 30%;
+  height: 31%;
+  z-index: 25;
+  background: linear-gradient(to top right, #F3C677, transparent);
+  clip-path: polygon(51% 0%, 22% 42%, 100% 0);
+  animation: projector2anim 5s alternate linear infinite;
+}
+
+@keyframes projector2anim{
+  0% {opacity: 0.3}
+  100% {opacity: 1}
+}
+
+.projector3{
+  position: absolute;
+  display: inline-block;
+  top: 20.1%;
+  left: 0%;
+  z-index: 20;
+  width: 25%;
+  height: 37.5%;
+  background: linear-gradient(to top right, #F3C677, transparent);
+  clip-path: polygon(100% 0, 66.5% 100%, 100% 66.5%);
+  animation: projector1anim 2.7s alternate linear infinite;
+}
+
+.projector4{
+  position: absolute;
+  display: inline-block;
+  top: 20.1%;
+  left: 0%;
+  z-index: 22;
+  width: 25%;
+  height: 37.5%;
+  background: linear-gradient(to top right, #F9564F, transparent);
+  clip-path: polygon(100% 0, 66.5% 100%, 100% 66.5%);
+  animation: projector2anim 4.9s alternate linear infinite;
+}
+
+.projector5{
+  position: absolute;
+  display: inline-block;
+  top: 42.3%;
+  left: -9.5%;
+  z-index: 30;
+  width: 39%;
+  height: 15%;
+  background: linear-gradient(to top right, #EF8A07, transparent);
+  animation: projector1anim 4.2s alternate linear infinite;
+  clip-path: polygon(82% 2%, 67% 100%, 100% 53%);
+}
+
+
+.projector6{
+  position: absolute;
+  display: inline-block;
+  top: 62.3%;
+  left: 8.255%;
+  z-index: 30;
+  width: 20%;
+  height: 26%;
+  /*background-color: purple;*/
+  background: linear-gradient(to top right, #F3C677, transparent);
+  animation: projector1anim 3.85s alternate linear infinite;
+  clip-path: polygon(100% 30%, 39% 0, 100% 100%);
+}
+
+.projector7{
+  position: absolute;
+  display: inline-block;
+  top: 62.3%;
+  left: 8.255%;
+  z-index: 30;
+  width: 20%;
+  height: 26%;
+  background-color: brown;
+  background: linear-gradient(to top right, #F9564F, transparent);
+  animation: projector2anim 2.44s alternate linear infinite;
+  clip-path: polygon(100% 30%, 39% 0, 100% 100%);
+}
+
+.projector8{
+  position: absolute;
+  display: inline-block;
+  top: 54.5%;
+  left: 8.255%;
+  z-index: 30;
+  width: 20%;
+  height: 26%;
+  background-color: gold;
+  background: linear-gradient(to top right, #F3C677, transparent);
+  animation: projector1anim 4.2s alternate linear infinite;
+  clip-path: polygon(100% 14%, 39% 30%, 100% 70%);
+}
+
+.projector9{
+  position: absolute;
+  display: inline-block;
+  top: 54.5%;
+  left: 8.255%;
+  z-index: 30;
+  width: 20%;
+  height: 26%;
+  background-color: silver;
+  background: linear-gradient(to top right, #F9564F, transparent);
+  animation: projector2anim 3.2s alternate linear infinite;
+  clip-path: polygon(100% 14%, 39% 30%, 100% 70%);
+}
+
+.projector10{
+  position: absolute;
+  display: inline-block;
+  top: 54.5%;
+  left: 8.255%;
+  z-index: 30;
+  width: 20%;
+  height: 26%;
+  /*background-color: rgb(55,33,250);*/
+  background: linear-gradient(to top right, #EF8A07, transparent);
+  animation: projector2anim 4.66s alternate linear infinite;
+   /*polygon(100% 0, 26% 51%, 100% 43%);*/
+  clip-path: polygon(100% 14%, 39% 30%, 100% 100%);
+}
+
+
+.jupiterimage{
+  display: inline-block;
+  float: left;
+  height: 100%;
+  width: 10000%;
+  background-color: transparent;
+  background-image:url('../../images/jupiter.jpg');
+  background-repeat:repeat-x;
+  background-size:2% 100%;
+  animation: scrollGood 500s linear infinite;
+}
+
+.profilebox1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*height: 100%;
+  width: 100%;*/
+  background-image:url('../../images/profile.jpeg');
+  background-size: 100%;
+  opacity: 0.4;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  /*box-shadow: inset -5px 0 130px rgba(0,0,200,1);*/
+}
+
+.profilebox2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*height: 100%;
+  width: 100%;*/
+  background-image:url('../../images/profile.jpeg');
+  background-size: 100%;
+  opacity: 0.25;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  animation: jitter1 10s linear infinite alternate;
+  /*box-shadow: inset -5px 0 130px rgba(0,0,200,1);*/
+}
+
+.profilebox3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*height: 100%;
+  width: 100%;*/
+  background-image:url('../../images/profile.jpeg');
+  background-size: 100%;
+  opacity: 0.25;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  animation: jitter2 10s linear infinite alternate;
+  /*box-shadow: inset -5px 0 130px rgba(0,0,200,1);*/
+}
+
+@keyframes jitter2{
+ 0% {transform: translate(-3px,-3px)}
+ 100% {transform: translate(3px,3px)}
+}
+
+
+@keyframes jitter1{
+  0% {transform: translate(-3px,3px)}
+  100% {transform: translate(3px,-3px)}
+}
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -99% 0;}
+}
+
+@keyframes scrollGood {
+  0% {
+    transform: translate3d(0px,0,0);
+  }
+  100% {
+    transform: translate3d(-5%,0,0);
+  }
+}
+
+.greetingsboxinner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-right: 5%;
+  background-color: transparent;
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: 'distantgalaxy';
+  color: rgba(230,200,200,1);
+}
+
+.greetingsboxinner p:first-child {
+  font-size: 5vh;
+  padding-left: 3.7%;
+  padding-right: 17%;
+}
+
+.greetingsboxinner p:nth-child(2) {
+  font-size: 3vh;
+  padding-left: 5%;
+  padding-right: 13%;
+}
+
+.explanationboxinner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 1vh;
+  font-family: 'distantgalaxy';
+  color: rgba(100,40,40,1);
+  background-color: transparent;
+  opacity: 1;
+  font-size: 1.9vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-left: 2%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.explanationboxinner p{
+  margin: 0px;
+}
+
+.hexgraph{
+  height: 100%;
+  width: 100%;
+    /*-webkit-mask-image: -webkit-gradient(linear, left 100%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)) ,color-stop(2%, rgba(0,0,0,.25)), color-stop(20%, rgba(0,0,0,.4)),  to(rgba(0, 0, 0, 0.8)));
+  background: url('../../images/hexgraph.png') center center no-repeat;
+                background-size: cover;
+}

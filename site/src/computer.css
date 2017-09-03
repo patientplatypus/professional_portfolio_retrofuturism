@@ -1,0 +1,608 @@
+@font-face {
+    font-family: vanberger;
+    src: url('./fonts/VanBerger/VanBerger_Stencil.otf');
+}
+
+.platypuskling{
+  position: absolute;
+  display: inline-block;
+  height: 5vh;
+  width: 2vw;
+  left: 5%;
+  top: 3%;
+  color: rgb(200,23,40);
+  font-weight: bolder;
+  font-family: 'vanberger';
+  font-size: 3vh;
+  line-height: 0;
+  padding-right: 0.01vw;
+  padding-left: 0.4vw;
+  padding-top: 0.01vh;
+  padding-bottom: 0.01vh;
+  text-align: center;
+  background-color: black;
+  z-index: 99;
+  box-shadow: inset 0 0 20px 3px rgba(170,23,40,1);
+}
+
+.platypusklingrelative{
+  position:relative;
+  height: 100%;
+  width: 100%;
+  /*box-shadow: inset 0 0 5% rgba(20,23,40,1);*/
+  /*box-shadow: inset 5em 1em gold;*/
+  /*boxShadow: inset -5px 0 130px rgba(0,256,21,0.23), inset 0px -5px 130px rgba(0,256,21,0.23);*/
+  /*box-shadow: inset 0 0 20px 0px white;*/
+}
+
+
+/*rgba(150,150,170,1);*/
+.cordfront1{
+  position: absolute;
+  z-index: 900;
+  top: 3.5%;
+  left: 20%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(4deg);
+}
+.cordfront2{
+  position: absolute;
+  z-index: 900;
+  top: 4%;
+  left: 28%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(17deg);
+}
+.cordfront3{
+  position: absolute;
+  z-index: 900;
+  top: 5.3%;
+  left: 35%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(25deg);
+}
+.cordfront4{
+  position: absolute;
+  z-index: 900;
+  top: 6.7%;
+  left: 41.0%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(28deg);
+}
+.cordfront5{
+  position: absolute;
+  z-index: 900;
+  top: 8%;
+  left: 47%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(24deg);
+}
+.cordfront6{
+  position: absolute;
+  z-index: 900;
+  top: 8.8%;
+  left: 53.6%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(10deg);
+}
+.cordfront7{
+  position: absolute;
+  z-index: 900;
+  top: 9%;
+  left: 60%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordfront8{
+  position: absolute;
+  z-index: 900;
+  top: 8.8%;
+  left: 66.5%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  /*background-color: green;*/
+  transform: rotate(-10deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordfront9{
+  position: absolute;
+  z-index: 900;
+  top: 8%;
+  left: 73.5%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  transform: rotate(-23deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordfront10{
+  position: absolute;
+  z-index: 900;
+  top: 6.6%;
+  left: 79.5%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  /*background-color: green;*/
+  background-color: rgba(100,100,130,1);
+  transform: rotate(-30deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordfront11{
+  position: absolute;
+  z-index: 900;
+  top: 5%;
+  left: 85.5%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  transform: rotate(-32deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordfront12{
+  position: absolute;
+  z-index: 900;
+  top: 3.5%;
+  left: 91.3%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  transform: rotate(-28deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordfront13{
+  position: absolute;
+  z-index: 900;
+  top: 2.5%;
+  left: 97.5%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  /*background-color: green;*/
+  background-color: rgba(100,100,130,1);
+  transform: rotate(-22deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordfront14{
+  position: absolute;
+  z-index: 900;
+  top: 1.77%;
+  left: 103.5%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  transform: rotate(-12deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordfront15{
+  position: absolute;
+  z-index: 900;
+  top: 1.52%;
+  left: 110.5%;
+  width: 7%;
+  height: 3.5%;
+  pointer-events: none;
+  background-color: rgba(100,100,130,1);
+  transform: rotate(0deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.cordback0{
+  position: absolute;
+  z-index: 20;
+  top: 3.6%;
+  left: 12.9%;
+  width: 10%;
+  height: 3.5%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 48% 0%, 100% 100%, 52% 100%);
+  transform: rotate(-25deg);
+}
+
+
+.cordback1{
+  position: absolute;
+  z-index: 890;
+  top: 3.6%;
+  left: 22%;
+  width: 10%;
+  height: 3.5%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 48% 0%, 100% 100%, 52% 100%);
+  transform: rotate(4deg);
+}
+
+.cordback2{
+  position: absolute;
+  z-index: 890;
+  top: 4.5%;
+  left: 29.32%;
+  width: 10.9%;
+  height: 3.6%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 49% 0%, 100% 100%, 51% 100%);
+  transform: rotate(17deg);
+}
+
+.cordback3{
+  position: absolute;
+  z-index: 890;
+  top: 5.87%;
+  left: 36.46%;
+  width: 10.0%;
+  height: 3.65%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 50% 100%);
+  transform: rotate(25deg);
+}
+
+.cordback4{
+  position: absolute;
+  z-index: 890;
+  top: 7.34%;
+  left: 44.20%;
+  width: 6.9%;
+  height: 3.51%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 49% 0%, 100% 100%, 51% 100%);
+  transform: rotate(27deg);
+}
+
+.cordback5{
+  position: absolute;
+  z-index: 890;
+  top: 8.58%;
+  left: 49.80%;
+  width: 9%;
+  height: 3.4%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 50% 100%);
+  transform: rotate(15deg);
+}
+
+.cordback6{
+  position: absolute;
+  z-index: 890;
+  top: 9.1%;
+  left: 55.99%;
+  width: 9.5%;
+  height: 3.35%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 52% 0%, 100% 100%, 48% 100%);
+  transform: rotate(4deg);
+}
+
+.cordback7{
+  position: absolute;
+  z-index: 890;
+  top: 9%;
+  left: 62.5%;
+  width: 9.2%;
+  height: 3.6%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 54% 0%, 100% 100%, 46% 100%);
+  transform: rotate(-10deg);
+}
+
+.cordback8{
+  position: absolute;
+  z-index: 890;
+  top: 8.57%;
+  left: 69%;
+  width: 10%;
+  height: 3.38%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 52% 0%, 100% 100%, 48% 100%);
+  transform: rotate(-24deg);
+}
+
+.cordback9{
+  position: absolute;
+  z-index: 890;
+  top: 7.57%;
+  left: 75%;
+  width: 10.5%;
+  height: 3.125%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 50% 100%);
+  transform: rotate(-26deg);
+}
+
+.cordback10{
+  position: absolute;
+  z-index: 890;
+  top: 5.9%;
+  left: 80.9%;
+  width: 10%;
+  height: 3.245%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 48% 0%, 100% 100%, 52% 100%);
+  transform: rotate(-33deg);
+}
+
+.cordback11{
+  position: absolute;
+  z-index: 890;
+  top: 4.5%;
+  left: 86.6%;
+  width: 10%;
+  height: 3.245%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 50% 100%);
+  transform: rotate(-32deg);
+}
+
+.cordback12{
+  position: absolute;
+  z-index: 890;
+  top: 3.18%;
+  left: 92.6%;
+  width: 10%;
+  height: 3.3%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 51% 0%, 100% 100%, 49% 100%);
+  transform: rotate(-24deg);
+}
+
+.cordback13{
+  position: absolute;
+  z-index: 890;
+  top: 2.25%;
+  left: 99.3%;
+  width: 8.5%;
+  height: 3.3%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 52% 0%, 100% 100%, 48% 100%);
+  transform: rotate(-18deg);
+}
+
+.cordback14{
+  position: absolute;
+  z-index: 890;
+  top: 1.6%;
+  left: 105.5%;
+  width: 8.5%;
+  height: 3.4%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 48% 0%, 100% 100%, 52% 100%);
+  transform: rotate(-8deg);
+}
+
+.cordback15{
+  position: absolute;
+  z-index: 890;
+  top: 1.4%;
+  left: 114.5%;
+  width: 8.5%;
+  height: 2.4%;
+  pointer-events: none;
+  /*rgba(90,90,100,1);*/
+  background-color: rgba(120,120,150,1);
+  clip-path: polygon(0% 0%, 48% 0%, 100% 100%, 52% 100%);
+  transform: rotate(-20deg);
+}
+
+.titlecircuit{
+  position: absolute;
+  display: inline-block;
+  top: 1.05%;
+  left: 106.5%;
+  width: 23.5%;
+  height: 10%;
+  /*z-index: 22;*/
+  z-index: 880;
+  /*background: purple;*/
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  /*background: rgba(200,100,100,0.5);*/
+  /*background: red;*/
+  /*clip-path: polygon(20% 0, 100% 1%, 90% 33%, 75% 75.5%, 55% 68.5%, 67% 34%, 20% 34%);*/
+  background-image:url('./images/braincircuitred.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  mask-image: radial-gradient(70% 15%, rgba(0,0,0,1) 10%, rgba(0,0,0,0.8) 15%, rgba(0,0,0,0.1) 60%);
+  /*mask-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1))*/
+  animation: infectionspread 5s linear infinite alternate;
+}
+
+@keyframes infectionspread {
+  0%{
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.platypusklingletter1{
+  position: absolute;
+  x: 0;
+  y: 0;
+  opacity:.8;
+  text-shadow: 0.1vw 0.1vw 10px rgba(170,23,40,1)
+}
+
+.platypusklingletter2{
+  position: absolute;
+  x: 0;
+  y: 0;
+  opacity:0.7;
+  text-shadow: 0.1vw 0.1vw 10px rgba(170,23,40,1)
+}
+
+.platypusklingletter3{
+  position: absolute;
+  x: 0;
+  y: 0;
+  opacity:.5;
+  text-shadow: 0.1vw 0.1vw 10px rgba(170,23,40,1)
+}
+
+.platypusklingletter4{
+  position: absolute;
+  x: 0;
+  y: 0;
+  opacity:.3;
+  text-shadow: 0.1vw 0.1vw 10px rgba(170,23,40,1)
+}
+
+.platypusklingletter5{
+  position: absolute;
+  x: 0;
+  y: 0;
+  opacity:.1;
+  text-shadow: 0.1vw 0.1vw 10px rgba(170,23,40,1)
+}
+
+.computerholder{
+  position: absolute;
+  display: inline-block;
+  left: 0vw;
+  top: 0vh;
+  width: 20vw;
+  height: 100vh;
+  /*background-color: purple;*/
+  background: url('./images/computertopleftgreen.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  font-style: italic;
+}
+
+.computerholderrelative{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.computerprojector{
+  position: absolute;
+  display: inline-block;
+  left: 15vw;
+  top: 90%;
+  width: 34%;
+  height: 10%;
+  background-color: transparent;
+  z-index: 20;
+}
+
+.computerside1{
+  position: absolute;
+  display: inline-block;
+  left: 15vw;
+  top: 10%;
+  width: 20%;
+  height: 80%;
+  background:
+  linear-gradient(
+      rgba(0, 140, 0, 0.3),
+      rgba(0, 140, 0, 0.3)
+  ),
+  url('./images/greencircuitboard.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  clip-path: polygon(0 20%, 0 8%, 0 0, 61% 0, 90% 6%, 100% 15%, 100% 47%, 100% 66%, 93% 80%, 70% 85%, 62% 95%, 0 100%);
+  z-index: 15;
+}
+
+.computertendril1{
+  position: fixed;
+  display: inline-block;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  x: 0;
+  y: 0;
+}
+
+.computertendril2{
+  position: fixed;
+  display: inline-block;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  x: -50%;
+  y: 0;
+}
+
+.computertendril3{
+  position: fixed;
+  display: inline-block;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  x: 0;
+  y: 0;
+}

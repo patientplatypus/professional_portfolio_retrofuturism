@@ -1,0 +1,35 @@
+.titlebackground{
+  position: absolute;
+  display: inline-block;
+  left:15vw;
+  top:0vh;
+  z-index: 4;
+  width: 85vw;
+  height: 15vh;
+  background: linear-gradient(blue 66%, transparent);
+}
+
+.starcontainer{
+  position: absolute;
+  display: inline-block;
+  left: 15vw;
+  top: 0vh;
+  z-index: 5;
+  width: 85vw;
+  height: 15vh;
+  background: linear-gradient(black, transparent);
+  font-style: italic;
+}
+
+.shootingstarcontainer{
+  position: absolute;
+  display: inline-block;
+  left: 15vw;
+  top: 0vh;
+  z-index: 100;
+  /*width: 85vw;*/
+  width: 85vw;
+  height: 10vh;
+  background-color: transparent;
+  font-style: italic;
+}

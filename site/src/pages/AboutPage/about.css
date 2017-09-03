@@ -1,0 +1,720 @@
+@font-face {
+    font-family: virgo;
+    src: url('../../fonts/Virgo-01/virgo.ttf');
+}
+
+.hexgraph{
+  height: 100%;
+  width: 100%;
+    /*-webkit-mask-image: -webkit-gradient(linear, left 100%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)) ,color-stop(2%, rgba(0,0,0,.25)), color-stop(20%, rgba(0,0,0,.4)),  to(rgba(0, 0, 0, 0.8)));
+  background: url('../../images/hexgraph.png') center center no-repeat;
+                background-size: cover;
+}
+
+/*.wallpaper{
+  background: url('../../images/spacepic1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}*/
+
+.triangle0:hover, .triangle1:hover, .triangle2:hover, .triangle3:hover, .triangle4:hover, .triangle5:hover{
+  background: linear-gradient(148deg, rgba(0,0,0,.7), rgba(0,255,0,1));
+  background-size: 1000% 1000%;
+  -webkit-animation: triangleAnimation 5s ease infinite;
+  -moz-animation: triangleAnimation 5s ease infinite;
+  -o-animation: triangleAnimation 5s ease infinite;
+  animation: triangleAnimation 5s ease infinite;
+  cursor: pointer;
+}
+
+.triangle0{
+  background-color: rgba(220,20,100,1);
+}
+.triangle1{
+  background-color: rgba(180,40,120,1);
+}
+.triangle2{
+  background-color: rgba(140,60,140,1);
+}
+.triangle3{
+  background-color: rgba(120,100,160,1);
+}
+.triangle4{
+  background-color: rgba(60,100,180,1);
+}
+.triangle5{
+  background-color: rgba(20,120,200,1);
+}
+
+.triangle0clicked{
+  background-color: rgba(240,0,0,1);
+}
+
+.triangle1clicked{
+  background-color: rgba(180,40,120,1)
+}
+.triangle2clicked{
+  background-color: rgba(140,60,140,1)
+}
+.triangle3clicked{
+  background-color: rgba(120,100,160,1)
+}
+.triangle4clicked{
+  background-color: rgba(60,100,180,1)
+}
+.triangle5clicked{
+  background-color: rgba(20,120,200,1)
+}
+
+
+@-webkit-keyframes triangleAnimation {
+    0%{background-position:10% 50%}
+    50%{background-position:90% 50%}
+    100%{background-position:10% 50%}
+}
+@-moz-keyframes triangleAnimation {
+    0%{background-position:10% 50%}
+    50%{background-position:90% 50%}
+    100%{background-position:10% 50%}
+}
+@-o-keyframes triangleAnimation {
+    0%{background-position:10% 50%}
+    50%{background-position:90% 50%}
+    100%{background-position:10% 50%}
+}
+@keyframes triangleAnimation {
+    0%{background-position:10% 50%}
+    50%{background-position:90% 50%}
+    100%{background-position:10% 50%}
+}
+
+@keyframes hovereffect0{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.jet1{
+  position: absolute;
+  top: 10%;
+  left: 4.8%;
+  width: 70%;
+  height: 22%;
+  background: linear-gradient(270deg, rgba(32, 40, 60, 0) 13%, rgba(250, 255, 244, 1));
+  background-size: 400% 400%;
+  -webkit-animation: jet1Animation 2s ease infinite;
+  -moz-animation: jet1Animation 2s ease infinite;
+  animation: jet1Animation 2s ease infinite;
+}
+
+.jet2{
+  position: absolute;
+  top: 10%;
+  left: 4.8%;
+  width: 70%;
+  height: 22%;
+  background: linear-gradient(270deg, rgba(45, 37, 50, 0) 40%, rgba(255, 244, 250, 1));
+  background-size: 400% 400%;
+  -webkit-animation: jet2Animation 3s ease infinite;
+  -moz-animation: jet2Animation 3s ease infinite;
+  animation: jet2Animation 3s ease infinite;
+}
+
+.jet3{
+  position: absolute;
+  top: 10%;
+  left: 4.8%;
+  width: 70%;
+  height: 22%;
+  background: linear-gradient(270deg, rgba(45, 37, 50, 0) 40%, rgba(255, 244, 250, 1));
+  background-size: 400% 400%;
+  -webkit-animation: jet2Animation 2s ease infinite;
+  -moz-animation: jet2Animation 2s ease infinite;
+  animation: jet2Animation 2s ease infinite;
+}
+
+.jet4{
+  position: absolute;
+  top: 10%;
+  left: 4.8%;
+  width: 70%;
+  height: 22%;
+  background: linear-gradient(270deg, rgba(50, 50, 50, 0) 20%, rgba(250, 250, 250, 1));
+  animation: jet4opacity 2s ease infinite;
+}
+
+
+.binary1{
+  font-family: 'virgo';
+  font-size: 4vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 10%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove2 1.5s ease infinite;
+}
+
+.binary2{
+  font-family: 'virgo';
+  font-size: 4vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 12%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove1 1.3s ease infinite;
+}
+
+.binary3{
+  font-family: 'virgo';
+  font-size: 3vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 14%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove2 2.1s ease infinite;
+}
+
+.binary4{
+  font-family: 'virgo';
+  font-size: 3vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 16%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove1 1.4s ease infinite;
+}
+
+.binary5{
+  font-family: 'virgo';
+  font-size: 4vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 18%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove2 2.4s ease infinite;
+}
+
+.binary6{
+  font-family: 'virgo';
+  font-size: 4vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 8%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove1 1.55s ease infinite;
+}
+
+.binary7{
+  font-family: 'virgo';
+  font-size: 4vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 7.5%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove2 1.19s ease infinite;
+}
+
+.binary8{
+  font-family: 'virgo';
+  font-size: 4vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 24%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove1 1.05s ease infinite;
+}
+
+.binary9{
+  font-family: 'virgo';
+  font-size: 4vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 26%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove2 2.25s ease infinite;
+}
+
+.binary10{
+  font-family: 'virgo';
+  font-size: 4vh;
+  line-height: 0;
+  position: absolute;
+  color: rgba(250, 250, 250, 0.2);
+  top: 20%;
+  width: 80%;
+  height: 22%;
+  animation: binarymove1 1.1s ease infinite;
+}
+
+.realprofile{
+  position: absolute;
+  display: inline-block;
+  left: 82%;
+  top: 12%;
+  width: 25vh;
+  height: 25vh;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.cutout1{
+  position: absolute;
+  display: inline-block;
+  left: 72%;
+  top: 43%;
+  width: 12vh;
+  height: 12vh;
+  background-color: orange;
+  clip-path: polygon(50% 0, 75% 10%, 100% 0, 100% 100%, 75% 90%, 50% 100%, 25% 90%, 0 100%, 0 0, 25% 10%);
+}
+
+.cutout2{
+  position: absolute;
+  display: inline-block;
+  left: 72%;
+  top: 63%;
+  width: 12vh;
+  height: 12vh;
+  background-color: orange;
+  clip-path: polygon(50% 10%, 75% 0, 100% 10%, 100% 90%, 75% 100%, 50% 90%, 25% 100%, 0 90%, 0 10%, 25% 0);
+}
+
+.profiletriangle1{
+  position: absolute;
+  display: inline-block;
+  left: 65%;
+  top: 10%;
+  width: 33%;
+  height: 85%;
+  background-color: purple;
+  clip-path: polygon(34% 0, 0% 100%, 100% 43%);
+}
+
+.profilecircle1{
+  position: absolute;
+  display: inline-block;
+  left: 80%;
+  top: 10%;
+  width: 30vh;
+  height: 30vh;
+  background:
+  linear-gradient(rgba(255,165,0,0), rgba(255,165,0,0)),
+  url('../../images/memphis3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.righttextbox{
+  position: absolute;
+  display: inline-block;
+  left: 67%;
+  top: 44.5%;
+  height: 45%;
+  width: 27%;
+  background-color: purple;
+  clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+  border-radius: 15%;
+  font-family: 'virgo';
+  color: rgb(230,165,0);
+  font-size: .95vw;
+  animation: righttextboxopacity 0.2s linear;
+}
+
+.rightjustify{
+  text-align: right;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+.leftjustify{
+  text-align: left;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+}
+
+.centerjustify{
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 1vw;
+  padding-top: 2vw;
+}
+
+
+.hexagon1{
+  position: absolute;
+  width: 15vw;
+  height: 30vh;
+  background-color: rgba(100,200,200,0.2);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexposition1{
+  top: 36.7%;
+  left: 4.7%;
+}
+
+.hexposition2{
+  top: 60%;
+  left: 16%;
+}
+
+.hexposition3{
+  top: 36.7%;
+  left: 27.3%;
+}
+
+.hexposition4{
+  top: 60%;
+  left: 38.7%;
+}
+
+.hexposition5{
+  top: 36.7%;
+  left: 50%;
+}
+
+.hexposition6{
+  top: 11.1%;
+  left: 58.85%;
+  background: linear-gradient(top left, transparent, rgba(100,200,200,0.2));
+}
+
+.lefttextbox0{
+  position: absolute;
+  top: 36.7%;
+  left: 4.7%;
+  width: 60%;
+  height: 58.2%;
+  background: linear-gradient(right,  rgba(0,133,230,0.8) 85%, transparent);
+  animation: lefttextboxopen 1s linear;
+  transition-timing-function: ease;
+}
+
+/*
+triangle0 rgba(220,20,100,1)
+triangle1 rgba(180,40,120,1)
+triangle2 rgba(140,60,140,1)
+triangle3 rgba(120,100,160,1)
+triangle4 rgba(60,100,180,1)
+triangle5 rgba(20,120,200,1)
+*/
+
+.lefttextbox1{
+  position: absolute;
+  top: 36.7%;
+  left: 4.7%;
+  width: 60%;
+  height: 58.2%;
+  background: linear-gradient(right,  rgba(0,122,132,0.8) 85%, transparent);
+  animation: lefttextboxopen 1s linear;
+  transition-timing-function: ease;
+}
+
+.lefttextbox2{
+  position: absolute;
+  top: 36.7%;
+  left: 4.7%;
+  width: 60%;
+  height: 58.2%;
+  background: linear-gradient(right,  rgba(0,160,172,0.8) 85%, transparent);
+  animation: lefttextboxopen 1s linear;
+  transition-timing-function: ease;
+}
+
+.lefttextbox3{
+  position: absolute;
+  top: 36.7%;
+  left: 4.7%;
+  width: 60%;
+  height: 58.2%;
+  background: linear-gradient(right,  rgba(0,176,162,0.8) 85%, transparent);
+  animation: lefttextboxopen 1s linear;
+  transition-timing-function: ease;
+}
+
+.lefttextbox4{
+  position: absolute;
+  top: 36.7%;
+  left: 4.7%;
+  box-sizing:border-box;
+  padding-top: 1%;
+  padding-right: 0%;
+  padding-left: 0%;
+  width: 0%;
+  height: 58.2%;
+  background: linear-gradient(right,  rgba(102,147,250,0.8) 85%, transparent);
+  animation: lefttextboxopen2 1s linear;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease;
+}
+
+@keyframes lefttextboxopen2 {
+  0%{
+    padding-right: 0%;
+    padding-left: 0%;
+    width: 0%;
+  }
+  100%{
+    padding-right: 20%;
+    padding-left: 3%;
+    width: 60%;
+  }
+}
+
+.lefttextbox5{
+  position: absolute;
+  top: 36.7%;
+  left: 4.7%;
+  width: 60%;
+  height: 58.2%;
+  background: linear-gradient(right,  rgba(197,207,230,0.8) 85%, transparent);
+  animation: lefttextboxopen 1s linear;
+  transition-timing-function: ease;
+}
+
+
+@keyframes lefttextboxopen {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
+.leftfadeintext{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  color: rgba(0,0,0,1);
+  padding-left: 15%;
+  padding-right: 5%;
+  padding-top: 5%;
+  font-size: 1.9vh;
+  font-family: 'virgo';
+  animation: fadeintextpluspictures .5s linear;
+  animation-delay: 1s;
+  transition-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.picturecontainer{
+  position: absolute;
+  background-color: rgba(100,0,0,0.2);
+  width: 10%;
+  height: 20%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.picturehexholder{
+  opacity: 0;
+  animation: fadeintextpluspictures .5s linear;
+  animation-delay: 1s;
+  transition-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.pictureexplainer{
+  position: absolute;
+  font-family: 'virgo';
+  width: 2%;
+  font-size: 1.2vh;
+  color: black;
+}
+
+.pictureposition1{
+  top: 41.7%;
+  left: 50%;
+  background:
+    linear-gradient(rgba(200,200,200,.4), rgba(200,200,200,.4)), url('http://68.media.tumblr.com/87a054d67ec0533fb006d398bf00d650/tumblr_o87wj9YwfJ1rw1i3co5_250.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.pictureposition2{
+  top: 56.7%;
+  left: 45%;
+  background:
+    linear-gradient(rgba(200,200,200,.4), rgba(200,200,200,.4)), url('http://68.media.tumblr.com/2dda034f85eb5cc4d4d3e4af9d1a0733/tumblr_n3v61lg50Z1rw1i3co1_250.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pictureposition3{
+  top: 71.7%;
+  left: 50%;
+  background:
+    linear-gradient(rgba(200,200,200,.4), rgba(200,200,200,.4)), url('http://68.media.tumblr.com/5f2faffabcade8b33e7cf9ea198e2a72/tumblr_n3v8fvlXMb1rw1i3co1_250.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pictureposition4{
+  top: 46.7%;
+  left: 45.5%;
+}
+
+.pictureposition5{
+  top: 61.7%;
+  left: 55.6%;
+}
+
+.pictureposition6{
+  top: 76.7%;
+  left: 45.5%;
+}
+
+.modalcontainer{
+  padding-left: 10%;
+}
+
+.pictureposition1:hover{
+  cursor: pointer;
+  background: url('http://68.media.tumblr.com/87a054d67ec0533fb006d398bf00d650/tumblr_o87wj9YwfJ1rw1i3co5_250.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pictureposition2:hover{
+  cursor: pointer;
+  background: url('http://68.media.tumblr.com/2dda034f85eb5cc4d4d3e4af9d1a0733/tumblr_n3v61lg50Z1rw1i3co1_250.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pictureposition3:hover{
+  cursor: pointer;
+  background: url('http://68.media.tumblr.com/5f2faffabcade8b33e7cf9ea198e2a72/tumblr_n3v8fvlXMb1rw1i3co1_250.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@keyframes fadeintextpluspictures {
+  0%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes righttextboxopacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes jet4opacity {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.9;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes binarymove1 {
+  0%{
+    left: 10%;
+    opacity: 0.8;
+  }
+  100%{
+    left: 65%;
+    opacity: 0.4;
+  }
+}
+
+@keyframes binarymove2 {
+  0%{
+    left: 7%;
+    opacity: 0.8;
+  }
+  100%{
+    left: 68%;
+    opacity: 0.4;
+  }
+}
+
+@-webkit-keyframes jet3Animation {
+  0%{background-position:80% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:80% 50%}
+}
+@-moz-keyframes jet3Animation {
+  0%{background-position:80% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:80% 50%}
+}
+@keyframes jet3Animation {
+  0%{background-position:80% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:80% 50%}
+}
+
+
+@-webkit-keyframes jet2Animation {
+  0%{background-position:90% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:90% 50%}
+}
+@-moz-keyframes jet2Animation {
+  0%{background-position:90% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:90% 50%}
+}
+@keyframes jet2Animation {
+  0%{background-position:60% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:60% 50%}
+}
+
+@-webkit-keyframes jet1Animation {
+  0%{background-position: 87% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position: 87% 50%}
+}
+@-moz-keyframes jet1Animation {
+  0%{background-position: 87% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position: 87% 50%}
+}
+@keyframes jet1Animation {
+  0%{background-position: 87% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position: 87% 50%}
+}

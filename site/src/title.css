@@ -1,0 +1,185 @@
+@font-face {
+    font-family: heavydata;
+    src: url('./fonts/Heavy-Data/heavy_data.ttf');
+}
+@font-face {
+    font-family: slukoni;
+    src: url('./fonts/Slukoni/Slukoni.otf');
+}
+
+.titleholder{
+  position: absolute;
+  display: inline-block;
+  left: 16vw;
+  top: 0vh;
+  width: 50vw;
+  height: 10vh;
+  /*background-color: purple;*/
+  z-index: 25;
+  background-color: transparent;
+  font-style: italic;
+}
+
+.titleholderrelative{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.titledataQ{
+  position: absolute;
+  display: inline-block;
+  left: 6%;
+  top: 63%;
+  height: 10%;
+  width: 10%;
+  font-family: 'heavydata';
+  font-size: 20vh;
+  color: orange;
+  z-index: 21;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+
+/*.titleinfectedcircuit{
+  position: absolute;
+  display: inline-block;
+  left: 6%;
+  top: 63%;
+  font-family: 'heavydata';
+  font-size: 20vh;
+  color: orange;
+  z-index: 21;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}*/
+
+.titleslukoniQ{
+  position: absolute;
+  display: inline-block;
+  left: 5%;
+  top: 90%;
+  font-family: 'slukoni';
+  font-size: 23vh;
+  color: red;
+  z-index: 18;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.titledata81{
+  position: absolute;
+  display: inline-block;
+  left: 19%;
+  top: 63%;
+  font-family: 'heavydata';
+  font-size: 20vh;
+  color: orange;
+  z-index: 21;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.titleslukoni81{
+  position: absolute;
+  display: inline-block;
+  left: 18%;
+  top: 90%;
+  font-family: 'slukoni';
+  font-size: 23vh;
+  color: red;
+  z-index: 18;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.titledataZ{
+  position: absolute;
+  display: inline-block;
+  left: 32%;
+  top: 63%;
+  font-family: 'heavydata';
+  font-size: 20vh;
+  color: orange;
+  z-index: 21;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.titleslukoniZ{
+  position: absolute;
+  display: inline-block;
+  left: 31%;
+  top: 90%;
+  font-family: 'slukoni';
+  font-size: 23vh;
+  color: red;
+  z-index: 18;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.titledata82{
+  position: absolute;
+  display: inline-block;
+  left: 45%;
+  top: 63%;
+  font-family: 'heavydata';
+  font-size: 20vh;
+  color: orange;
+  z-index: 21;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.titleslukoni82{
+  position: absolute;
+  display: inline-block;
+  left: 44%;
+  top: 90%;
+  font-family: 'slukoni';
+  font-size: 23vh;
+  color: red;
+  z-index: 18;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.titledataP{
+  position: absolute;
+  display: inline-block;
+  left: 58%;
+  top: 63%;
+  font-family: 'heavydata';
+  font-size: 20vh;
+  color: orange;
+  z-index: 21;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.titleslukoniP{
+  position: absolute;
+  display: inline-block;
+  left: 57%;
+  top: 90%;
+  font-family: 'slukoni';
+  font-size: 23vh;
+  color: red;
+  z-index: 18;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}

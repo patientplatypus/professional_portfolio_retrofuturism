@@ -1,0 +1,425 @@
+@font-face {
+    font-family: virgo;
+    src: url('../../fonts/Virgo-01/virgo.ttf');
+}
+
+.headers{
+  font-family: 'virgo';
+  font-size: 3vh;
+  line-height: 0;
+}
+
+.subheaders{
+  font-family: 'virgo';
+  font-size: 2.5vh;
+  line-height: 0;
+}
+
+
+.projectitem{
+  font-family: 'virgo';
+  font-size: 2vh;
+  line-height: 0;
+}
+
+.projectdescription{
+  font-family: 'virgo';
+  font-size: 1.8vh;
+  line-height: 2vh;
+}
+
+.projectora{
+  position: absolute;
+  display: inline-block;
+  top: 18%;
+  left: 3%;
+  z-index: 20;
+  width: 19%;
+  height: 45%;
+  /*background-color: rgba(100,0,0,.5);*/
+  background: linear-gradient(to top right, #0876D6, transparent);
+  clip-path: polygon(100% 0, 66.5% 100%, 100% 85%);
+  animation: projector1anim 3.65s alternate linear infinite;
+}
+
+.projectorc{
+  position: absolute;
+  display: inline-block;
+  top: 18%;
+  left: 3%;
+  z-index: 20;
+  width: 19%;
+  height: 45%;
+  /*background-color: rgba(0,100,0,.5);*/
+  background: linear-gradient(to top right, #0876D6, transparent);
+  clip-path: polygon(100% 0, 66.5% 100%, 100% 40%);
+  animation: projector1anim 2.7s alternate linear infinite;
+}
+
+.projectord{
+  position: absolute;
+  display: inline-block;
+  top: 18%;
+  left: 3%;
+  z-index: 20;
+  width: 19%;
+  height: 45%;
+  /*background-color: rgba(50,0,50,.5);*/
+  background: linear-gradient(to top right, #2898CC, transparent);
+  clip-path: polygon(100% 0, 66.5% 100%, 100% 40%);
+  animation: projector2anim 3.2s alternate linear infinite;
+}
+
+.projectore{
+  position: absolute;
+  display: inline-block;
+  top: 18%;
+  left: 3%;
+  z-index: 20;
+  width: 19%;
+  height: 45%;
+  /*background-color: rgba(50,0,50,.5);*/
+  background: linear-gradient(to top right, #2282D6, transparent);
+  clip-path: polygon(100% 0, 66.5% 100%, 100% 85%);
+  animation: projector1anim 3s alternate linear infinite;
+}
+
+.projectorb{
+  position: absolute;
+  display: inline-block;
+  top: 55.7%;
+  left: 15.5%;
+  z-index: 20;
+  width: 8%;
+  height: 7%;
+  /*background-color: purple;*/
+  clip-path: polygon(82% 0%, 94% 0%, 94% 30%, 0% 105%);
+  background: linear-gradient(to top right, #0B85EF, transparent);
+  animation: projector2anim 3.3s alternate linear infinite;
+}
+
+
+.projectorg{
+  position: absolute;
+  display: inline-block;
+  top: 65.7%;
+  left: 17.25%;
+  z-index: 20;
+  width: 10.5%;
+  height: 14%;
+  clip-path: polygon(100% 1%, 0 32%, 100% 86%);
+  background: linear-gradient(to top right, #0876D6, transparent);
+  animation: projector2anim 3.9s alternate linear infinite;
+}
+
+.projectorh{
+  position: absolute;
+  display: inline-block;
+  top: 60.7%;
+  left: 17.25%;
+  z-index: 20;
+  width: 10.5%;
+  height: 29%;
+  clip-path: polygon(100% 1%, 0 32%, 100% 86%);
+  background: linear-gradient(to top right, #2898CC, transparent);
+  animation: projector1anim 3.3s alternate linear infinite;
+}
+
+.projectori{
+  position: absolute;
+  display: inline-block;
+  top: 61.7%;
+  left: 17.25%;
+  z-index: 20;
+  width: 10.5%;
+  height: 29%;
+  background-color: blue;
+  clip-path: polygon(100% 1%, 0 28.5%, 100% 100%);
+  background: linear-gradient(to top right, #0B85EF, transparent);
+  animation: projector2anim 3.3s alternate linear infinite;
+}
+
+
+
+@keyframes projector1anim{
+  0% {opacity: 1}
+  100% {opacity: 0.4}
+}
+
+@keyframes projector2anim{
+  0% {opacity: 0.3}
+  100% {opacity: 1}
+}
+
+.ellipseholder{
+  position: absolute;
+  background-color: transparent;
+  height: 44%;
+  width: 30%;
+  top: 18%;
+  left: 63%;
+}
+
+.circuitparent{
+  position: absolute;
+  height: 44%;
+  width: 30%;
+  top: 18%;
+  left: 63%;
+}
+
+
+
+@keyframes circle {
+	to { transform: rotate(1turn); }
+}
+@keyframes updown {
+	to { transform: translateY(110%); }
+}
+.figureupdown1 {
+  position: absolute;
+  top: 0%;
+  left: 17%;
+  pointer-events: none;
+  width: 65%;
+  height: 65%;
+  background-color: transparent;
+	animation: updown 2s infinite ease-in-out alternate;
+}
+
+.figureupdown2 {
+  position: absolute;
+  top: 0%;
+  left: 17%;
+  pointer-events: none;
+  width: 65%;
+  height: 65%;
+  background-color: transparent;
+	animation: updown 2s infinite ease-in-out alternate;
+}
+
+.figureupdown3 {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  pointer-events: none;
+  width: 65%;
+  height: 65%;
+  background-color: transparent;
+	animation: updown 4s infinite ease-in-out alternate;
+}
+
+.figureupdown4 {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  pointer-events: none;
+  width: 65%;
+  height: 65%;
+  background-color: transparent;
+	animation: updown 4s infinite ease-in-out alternate;
+}
+
+.figureupdown5 {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  pointer-events: none;
+  width: 65%;
+  height: 65%;
+  background-color: transparent;
+	animation: updown 3s infinite ease-in-out alternate;
+}
+
+.blueball1 {
+  position: absolute;
+  z-index: 999;
+  top: 0%;
+  left: 40%;
+	width: 5%;
+  height: 5%;
+	border-radius: 50%;
+  background-color: tomato;
+	transform-origin: center 250%;
+	animation: circle 4s infinite linear;
+}
+
+.blueball2 {
+  position: absolute;
+  z-index: 999;
+  top: 0%;
+  left: 40%;
+	width: 5%;
+  height: 5%;
+	border-radius: 50%;
+  background-color: tomato;
+	transform-origin: center 250%;
+	animation: circle 4s infinite linear;
+}
+
+.blueball3 {
+  position: absolute;
+  z-index: 999;
+  top: 0%;
+  left: 40%;
+	width: 5%;
+  height: 5%;
+	border-radius: 50%;
+  background-color: tomato;
+	transform-origin: center 250%;
+	animation: circle 8s infinite linear;
+}
+
+.blueball4 {
+  position: absolute;
+  z-index: 999;
+  top: 0%;
+  left: 40%;
+	width: 5%;
+  height: 5%;
+	border-radius: 50%;
+  background-color: tomato;
+	transform-origin: center 250%;
+	animation: circle 8s infinite linear;
+}
+
+.blueball5 {
+  position: absolute;
+  z-index: 999;
+  top: 0%;
+  left: 40%;
+	width: 5%;
+  height: 5%;
+	border-radius: 50%;
+  background-color: tomato;
+	transform-origin: center 250%;
+	animation: circle 6s infinite linear;
+}
+
+@-moz-keyframes spin1 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin1 { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.rotate1{
+  transform: rotate(0deg);
+}
+
+.rotate2{
+  transform: rotate(180deg);
+}
+
+.rotate3 {
+  transform: rotate(90deg);
+}
+
+.rotate4 {
+  transform: rotate(270deg);
+}
+
+.rotate5 {
+  transform: rotate(45deg);
+}
+
+.brainholder{
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 36%;
+  left: 40%;
+  border-radius: 45%;
+  background-color: rgba(60,105,165,1);
+  box-shadow: inset 0 0 1vw 0.23vw rgba(5,0,162,0.9);
+}
+
+.circuitholder{
+  position: absolute;
+  width: 12%;
+  height: 25%;
+  top: 38%;
+  left: 43%;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(70%, rgba(0,0,0,.1)), color-stop(80%,rgba(0,0,0,.01)), to(rgba(0,0,0,0)));
+  z-index: 70;
+  border-radius: 45%;
+  background: url('../../images/tomatocircuit.png') center center no-repeat;
+                background-size: cover;
+}
+
+.positionrelative{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.hexgraph{
+  height: 100%;
+  width: 100%;
+    /*-webkit-mask-image: -webkit-gradient(linear, left 100%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)) ,color-stop(2%, rgba(0,0,0,.25)), color-stop(20%, rgba(0,0,0,.4)),  to(rgba(0, 0, 0, 0.8)));
+  background: url('../../images/hexgraph.png') center center no-repeat;
+                background-size: cover;
+}
+
+.pictureholder{
+  position: absolute;
+  top: 9%;
+  left: 56.5%;
+  height: 50%;
+  width: 34%;
+  z-index: 650;
+  background-color: rgba(27, 40, 180,1);
+}
+
+/*<Triangle1 onClick={()=>{console.log('triangle1');}} triangle={2}/>
+<Triangle2 onClick={()=>{console.log('triangle2');}} triangle={2}/>
+<Triangle3 onClick={()=>{console.log('triangle3');}} triangle={2}/>*/
+
+.pictureframe{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 99%;
+  width: 95%;
+  z-index: 501;
+  border-bottom-right-radius: 40%;
+  /*background-color: red;*/
+  background: url('../../images/profile.jpeg') center center no-repeat;
+                background-size: cover;
+}
+
+.triangle{
+  position: absolute;
+  top: 90%;
+  left: 85%;
+  width: 4%;
+  height: 5%;
+  z-index: 700;
+  background-color: rgb(97, 124, 183);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle:hover{
+  background-color: green;
+}
+
+a.atagwork:link {
+    display: block;
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding-right: auto;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+a.atagwork:hover{
+  background: linear-gradient(to left, purple, tomato);
+}
+
+a.atagwork:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
