@@ -104,7 +104,7 @@
   /*background-color: purple;*/
   background: linear-gradient(to top right, #F3C677, transparent);
   animation: projector1anim 3.85s alternate linear infinite;
-  clip-path: polygon(100% 30%, 39% 0, 100% 100%);
+  clip-path: polygon(100% 30%, 39% 10%, 100% 100%);
 }
 
 .projector7{
@@ -118,7 +118,7 @@
   background-color: brown;
   background: linear-gradient(to top right, #F9564F, transparent);
   animation: projector2anim 2.44s alternate linear infinite;
-  clip-path: polygon(100% 30%, 39% 0, 100% 100%);
+  clip-path: polygon(100% 30%, 39% 10%, 100% 100%);
 }
 
 .projector8{
@@ -132,7 +132,7 @@
   background-color: gold;
   background: linear-gradient(to top right, #F3C677, transparent);
   animation: projector1anim 4.2s alternate linear infinite;
-  clip-path: polygon(100% 14%, 39% 30%, 100% 70%);
+  clip-path: polygon(100% 14%, 39% 40%, 100% 70%);
 }
 
 .projector9{
@@ -146,7 +146,7 @@
   background-color: silver;
   background: linear-gradient(to top right, #F9564F, transparent);
   animation: projector2anim 3.2s alternate linear infinite;
-  clip-path: polygon(100% 14%, 39% 30%, 100% 70%);
+  clip-path: polygon(100% 14%, 39% 40%, 100% 70%);
 }
 
 .projector10{
@@ -161,7 +161,7 @@
   background: linear-gradient(to top right, #EF8A07, transparent);
   animation: projector2anim 4.66s alternate linear infinite;
    /*polygon(100% 0, 26% 51%, 100% 43%);*/
-  clip-path: polygon(100% 14%, 39% 30%, 100% 100%);
+  clip-path: polygon(100% 14%, 39% 40%, 100% 100%);
 }
 
 

@@ -915,6 +915,10 @@ class ContactPage extends Component{
 
             <div className='hoop2transformhoop01'/>
             <div className='hoop2transformhoop11'/>
+            <div className='hoop2transformhoop21'/>
+            <div className='hoop2transformhoop31'/>
+            <div className='hoop2transformhoop41'/>
+            <div className='hoop2transformhoop51'/>
 
           </AbsoluteContainer>
           <AbsoluteContainer z={15} style={styles.pointerEvents}>
@@ -1119,7 +1123,7 @@ class ContactPage extends Component{
                           )}
                           {renderIf(this.state.targetingcomputer2===true)(
                             <div>
-                              <div className='targetbox2 targetanimation2 highz'>
+                              <div className='targetbox2 highz'>
                                 <PositionRelative>
                                   {renderIf(this.state.targetingcomputer3===true)(
                                     <div>
@@ -1147,7 +1151,7 @@ class ContactPage extends Component{
                                   )}
                                 </PositionRelative>
                               </div>
-                              <div className='targetbox1 targetanimation2'/>
+                              <div className='targetbox1'/>
                             </div>
                           )}
                           {renderIf(this.state.targetingcomputer4===true)(

@@ -521,7 +521,32 @@ triangle5 rgba(20,120,200,1)
   animation-delay: 1s;
   transition-timing-function: ease;
   animation-fill-mode: forwards;
+  overflow: hidden;
+  overflow-y: scroll;
 }
+
+.leftfadeintextbooks{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  color: rgba(0,0,0,1);
+  padding-left: 15%;
+  padding-right: 5%;
+  padding-top: 5%;
+  font-size: 1.5vh;
+  font-family: 'virgo';
+  animation: fadeintextpluspictures .5s linear;
+  animation-delay: 1s;
+  transition-timing-function: ease;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+
 
 .picturecontainer{
   position: absolute;
@@ -594,6 +619,14 @@ triangle5 rgba(20,120,200,1)
   padding-left: 10%;
 }
 
+.lowz{
+  z-index: 10;
+}
+
+.highz{
+  z-index: 900;
+}
+
 .pictureposition1:hover{
   cursor: pointer;
   background: url('http://68.media.tumblr.com/87a054d67ec0533fb006d398bf00d650/tumblr_o87wj9YwfJ1rw1i3co5_250.jpg');
@@ -613,6 +646,16 @@ triangle5 rgba(20,120,200,1)
   background: url('http://68.media.tumblr.com/5f2faffabcade8b33e7cf9ea198e2a72/tumblr_n3v8fvlXMb1rw1i3co1_250.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.booktitle{
+  color: rgba(200,0,0,1);
+  font-style: italic;
+}
+
+.booktitle:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,200,0.2);
 }
 
 

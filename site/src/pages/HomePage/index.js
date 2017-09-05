@@ -110,7 +110,7 @@ const ProjectorHolder = glamorous.div(
     position: 'fixed',
     top: 0,
     left: 0,
-    zIndex: 999,
+    zIndex: 600,
     height: '100%',
     width: '100%'
   }
@@ -150,7 +150,7 @@ const styles = {
     width: '100%'
   },
   container: {
-    overflow: 'hidden'
+    overflow: 'hidden',
   }
 }
 

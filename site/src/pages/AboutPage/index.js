@@ -275,6 +275,9 @@ class AboutPage extends Component{
     }
   }
 
+  windowopener(url){
+    window.open(url);
+  }
 
   triangleclicked(number){
     if (number===0){
@@ -638,7 +641,7 @@ class AboutPage extends Component{
                     (
                       <div>
                       {
-                        <EquilateralTriangle className='triangle5clicked' size={.04*window.innerWidth} top={(.12+(style.setlocation/1000))*window.innerHeight} left={(.1+(style.setlocation/10000))*window.innerWidth}
+                        <EquilateralTriangle className='triangle5clicked highz' size={.04*window.innerWidth} top={(.12+(style.setlocation/1000))*window.innerHeight} left={(.1+(style.setlocation/10000))*window.innerWidth}
                         transformOrigin={`50% 100%`}
                         transform={`rotate(${style.setrotation}deg)`}/>
                       }
@@ -667,11 +670,45 @@ class AboutPage extends Component{
                     Emeishan, China
                   </p>
                 </div>
-                <div className='pictureexplainer pictureposition6'>
+              <div className='pictureexplainer pictureposition6'>
                   <p>
                     Everest, Nepal
                   </p>
                 </div>
+              </div>
+            )}
+            {renderIf(this.state.triangle5clicked===true)(
+              <div className='lefttextbox5 lowz'>
+                <PositionRelative>
+                  <div className='leftfadeintextbooks'>
+                    <h3>
+                      Books
+                    </h3>
+                    <p>
+                      Besides analytics, my other great passion in life has been reading. While my favorite book has always been the last one I&#39;ve read, this space is too small to list them all. But here are three that you might not have read, and have given me great pleasure. Click on the links to navigate to free books!
+                    </p>
+                    <ul>
+                      <li>
+                        <div className='booktitle' onClick={()=>{this.windowopener('http://www.gutenberg.org/ebooks/145')}}>
+                          Middlemarch by George Eliot
+                        </div>
+                        Perhaps one of the greatest, and in my opinion the greatest, love stories ever. It tells the story of three couples in rural England and how their different personalities dictate their feelings and actions. In most books you have a sense that what is happening is taking place on a stage and the sense of fiction lowers the stakes of any dramatic tension. This book almost feels supra-real, where even the most minor or fleeting movement could make or destroy the world.
+                      </li>
+                      <li>
+                        <div className='booktitle' onClick={()=>{this.windowopener('http://www.gutenberg.org/ebooks/308')}}>
+                          Three Men in a Boat by Jerome K. Jerome
+                        </div>
+                        This is about three clerical workers that go on a holiday boat ride on the Thames in Victorian England. Between humor that is very much like the style in a PG Wodehouse novel, there are life lessons that feel as true today as they were over when they were first written over 100 years ago. Definitely recommend!
+                      </li>
+                      <li>
+                        <div className='booktitle' onClick={()=>{this.windowopener('http://fer3.com/arc/imgx/wind-sand-and-stars.pdf')}}>
+                          Wind Sand and Stars by Antoine de Saint-Exupery
+                        </div>
+                        Written by the French author of The Little Prince, this is an autobiographical account of the author&#39;s experiences delivering the mail by plane at the birth of aeronautics. Every page is filled with danger and excitement, and, even in translation, the poetry of the language is inspiring. By far my favorite adventure novel!
+                      </li>
+                    </ul>
+                  </div>
+                </PositionRelative>
               </div>
             )}
           </AbsoluteContainer>
@@ -789,17 +826,7 @@ class AboutPage extends Component{
                 </PositionRelative>
               </div>
             )}
-            {renderIf(this.state.triangle5clicked===true)(
-              <div className='lefttextbox5'>
-                <PositionRelative>
-                  <div className='leftfadeintext'>
-                    <p>
-                      Personal
-                    </p>
-                  </div>
-                </PositionRelative>
-              </div>
-            )}
+            {/*PERSONALPLACEHOLDERDEPRECATED*/}
           </AbsoluteContainer>
 
           <AbsoluteContainer style={styles.pointerEvents} z={10}>

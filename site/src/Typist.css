@@ -64,14 +64,15 @@
 
 
 .handlepagetitles{
-  padding-right: auto;
-  padding-left: 3vh;
-  padding-top: .1vh;
-  padding-bottom: .1vh;
-  margin-top: .1vh;
-  margin-bottom: .1vh;
-  word-wrap: break-word;
-  cursor: pointer;
+  /*padding-right: auto !important;
+  padding-left: 15px !important;
+  padding-top: .1vh !important;
+  padding-bottom: .1vh !important;*/
+  padding: 10px !important;
+  margin-top: .1vh !important;
+  margin-bottom: .1vh !important;
+  word-wrap: break-word !important;
+  cursor: pointer !important;
 }
 
 /*.handleresume{
@@ -109,10 +110,11 @@ a.atagterminal:link {
     text-decoration: inherit;
     color: inherit;
     cursor: pointer;
-    padding-right: auto;
+    /*padding-right: auto;
     padding-left: 20px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px;*/
+    padding: 10px;
     margin-top: 1%;
     margin-bottom: 1%;
 }

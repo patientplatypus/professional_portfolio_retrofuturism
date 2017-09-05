@@ -98,6 +98,22 @@ const ComputerOverlay = styled.div`
   background-color: black;
 `
 
+const ProjectorOverlay = styled.div`
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  position: relative;
+  background-color: transparent;
+  pointer-events: none;
+`
+
+const WireOverlay = styled.div`
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  position: relative;
+  background-color: transparent;
+  pointer-events: none;
+`
+
 const TitleBox = styled.div`
   color: #fff;
   padding: 5px;
@@ -222,6 +238,120 @@ const GridBoxSideBar = glamorous.div(
   }
 )
 
+const ConnectorLightsHome = glamorous.div(
+  {
+    position: 'absolute',
+    backgroundColor: 'purple',
+    borderRadius: '50%'
+  },
+  ({left})=>({
+    left: left
+  }),
+  ({top})=>({
+    top: top
+  }),
+  ({height})=>({
+    height: height
+  }),
+  ({width})=>({
+    width: width
+  }),
+  ({currentpage})=>({
+    background: currentpage==='/home'?`radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15), rgba(255,255,255,0.17), rgba(255,255,255,0.2)),
+    linear-gradient(rgba(200,100,0,1), rgba(200,100,0,1))`:currentpage==='/'?`radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15), rgba(255,255,255,0.17), rgba(255,255,255,0.2)),
+    linear-gradient(rgba(200,100,0,1), rgba(200,100,0,1))`:`radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(0,0,0,0.9), rgba(0,0,0,1)),
+    linear-gradient(rgba(200,100,0,1), rgba(200,100,0,1))`,
+    MozBoxShadow:currentpage==='/home'?`0 0 2px 1px rgba(200,100,0,1)`:currentpage==='/'?`0 0 2px 1px rgba(200,100,0,1)`:``,
+    WebkitBoxShadow:currentpage==='/home'?`0 0 2px 1px rgba(200,100,0,1)`:currentpage==='/'?`0 0 2px 1px rgba(200,100,0,1)`:``,
+    boxShadow:currentpage==='/home'?`0 0 2px 1px rgba(200,100,0,1)`:currentpage==='/'?`0 0 2px 1px rgba(200,100,0,1)`:``,
+  })
+)
+
+const ConnectorLightsWork = glamorous.div(
+  {
+    position: 'absolute',
+    backgroundColor: 'purple',
+    borderRadius: '50%'
+  },
+  ({left})=>({
+    left: left
+  }),
+  ({top})=>({
+    top: top
+  }),
+  ({height})=>({
+    height: height
+  }),
+  ({width})=>({
+    width: width
+  }),
+  ({currentpage})=>({
+    background: currentpage==='/work'?`radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15), rgba(255,255,255,0.17), rgba(255,255,255,0.2)),
+    linear-gradient(rgba(0,0,240,1), rgba(0,0,240,1))`:`radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(0,0,0,0.9), rgba(0,0,0,1)),
+    linear-gradient(rgba(0,0,240,1), rgba(0,0,240,1))`,
+    MozBoxShadow:currentpage==='/work'?`0 0 2px 1px rgba(0,0,240,1)`:``,
+    WebkitBoxShadow:currentpage==='/work'?`0 0 2px 1px rgba(0,0,240,1)`:``,
+    boxShadow:currentpage==='/work'?`0 0 2px 1px rgba(0,0,240,1)`:``,
+  })
+)
+
+const ConnectorLightsContact = glamorous.div(
+  {
+    position: 'absolute',
+    backgroundColor: 'purple',
+    borderRadius: '50%'
+  },
+  ({left})=>({
+    left: left
+  }),
+  ({top})=>({
+    top: top
+  }),
+  ({height})=>({
+    height: height
+  }),
+  ({width})=>({
+    width: width
+  }),
+  ({currentpage})=>({
+    background: currentpage==='/contact'?`radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15), rgba(255,255,255,0.17), rgba(255,255,255,0.2)),
+    linear-gradient(rgba(240,0,0,1), rgba(240,0,0,1))`:`radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(0,0,0,0.9), rgba(0,0,0,1)),
+    linear-gradient(rgba(240,0,0,1), rgba(240,0,0,1))`,
+    MozBoxShadow:currentpage==='/contact'?`0 0 2px 1px rgba(240,0,0,1)`:``,
+    WebkitBoxShadow:currentpage==='/contact'?`0 0 2px 1px rgba(240,0,0,1)`:``,
+    boxShadow:currentpage==='/contact'?`0 0 2px 1px rgba(240,0,0,1)`:``,
+  })
+)
+
+const ConnectorLightsAbout = glamorous.div(
+  {
+    position: 'absolute',
+    backgroundColor: 'purple',
+    borderRadius: '50%'
+  },
+  ({left})=>({
+    left: left
+  }),
+  ({top})=>({
+    top: top
+  }),
+  ({height})=>({
+    height: height
+  }),
+  ({width})=>({
+    width: width
+  }),
+  ({currentpage})=>({
+    background: currentpage==='/about'?`radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.15), rgba(255,255,255,0.17), rgba(255,255,255,0.2)),
+    linear-gradient(rgba(0,150,250,1), rgba(0,150,250,1))`:`radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(0,0,0,0.9), rgba(0,0,0,1)),
+    linear-gradient(rgba(0,150,250,1), rgba(0,150,250,1))`,
+    MozBoxShadow:currentpage==='/about'?`0 0 2px 1px rgba(0,150,250,1)`:``,
+    WebkitBoxShadow:currentpage==='/about'?`0 0 2px 1px rgba(0,150,250,1)`:``,
+    boxShadow:currentpage==='/about'?`0 0 2px 1px rgba(0,150,250,1)`:``,
+  })
+)
+
+
 const scanlines = css.keyframes({
   '0%': { backgroundPosition: '0 0' },
   '100%': { backgroundPosition: '0 30px' }
@@ -265,10 +395,10 @@ const styles = {
   container: {
     position: 'relative',
     height: window.innerHeight,
-    width: window.innerWidth
+    width: window.innerWidth,
+    zIndex: 2,
   }
 }
-
 
 class App extends Component{
   constructor(props){
@@ -286,11 +416,16 @@ class App extends Component{
       songArrayName: ['Robert Parker: Crystal City', 'Anachronist: RGB', 'Waveshaper: Station Nova', 'She: Pioneer', 'Tycho: Descent'],
       songArrayIndex: 0,
       player: null,
+      lightlocation: '/',
       videoId: 'zJqLH8EA2rM',
     }
   }
 
+
   componentDidMount(){
+    this.setState({
+      lightlocation: history.location.pathname
+    })
     setInterval(()=>{
       if (this.state.platypusklingindex<=14){
         this.setState({
@@ -594,7 +729,8 @@ class App extends Component{
     },()=>{
       setTimeout(()=>{
         self.setState({
-          redirect: ''
+          redirect: '',
+          lightlocation: this.state.currentpage
         })
       }, 0)
     })
@@ -789,6 +925,22 @@ class App extends Component{
                 </div>
               </div>
             </ComputerOverlay>
+            <ProjectorOverlay>
+              <div className='sideprojector1'/>
+              <div className='sideprojector2'/>
+              <div className='sideprojector3'/>
+              <div className='sideprojector4'/>
+              <div className='sideprojectorbig'/>
+              <div className='wireconnector1'>
+                <PositionRelative>
+                  <ConnectorLightsContact top={'35%'} left={'2.5%'} height={'30%'} width={'20%'} currentpage={this.state.lightlocation}/>
+                  <ConnectorLightsAbout top={'35%'} left={'27.5%'} height={'30%'} width={'20%'} currentpage={this.state.lightlocation}/>
+                  <ConnectorLightsWork top={'35%'} left={'52.5%'} height={'30%'} width={'20%'} currentpage={this.state.lightlocation}/>
+                  <ConnectorLightsHome top={'35%'} left={'77.5%'} height={'30%'} width={'20%'} currentpage={this.state.lightlocation}/>
+                </PositionRelative>
+              </div>
+              <div className='wireconnector2'/>
+            </ProjectorOverlay>
             <StarContainer>
               <div className="starcontainer" ref={ (starcontainer) => this.starcontainer = starcontainer}>
                 <canvas style={styles.starcanvas} ref={ (starcanvas) => this.starcanvas = starcanvas}/>
@@ -995,7 +1147,6 @@ class App extends Component{
             <TopLeftBox>
             </TopLeftBox>
             <GridBoxSideBar>
-
               <Terminal>
                 <TerminalContainer top={`0%`} left={`0%`} z={1} maxHeight={'75%'}>
                   <div className='handlenonpagetitles'>
@@ -1011,17 +1162,17 @@ class App extends Component{
                   <div className='handlenonpagetitles'>
                     <span className="textshadowset">❖LOCAL STARSYSTEMS❖</span>
                   </div>
-                  <SideBarItemHome page={this.state.currentpage} className="handlepagetitles" onClick={()=>{this.redirectfunc('/home')}}>
-                    <span className="textshadowset">HOME_PLANET</span>
+                  <SideBarItemHome page={this.state.lightlocation} className="handlepagetitles" onClick={()=>{this.redirectfunc('/home')}}>
+                    &#9;<span className="textshadowset">HOME_PLANET</span>
                   </SideBarItemHome>
-                  <SideBarItemWork page={this.state.currentpage} className="handlepagetitles" onClick={()=>{this.redirectfunc('/work')}}>
-                    <span className="textshadowset">MY_WORK</span>
+                  <SideBarItemWork page={this.state.lightlocation} className="handlepagetitles" onClick={()=>{this.redirectfunc('/work')}}>
+                    &#9;<span className="textshadowset">MY_WORK</span>
                   </SideBarItemWork>
-                  <SideBarItemAbout page={this.state.currentpage} className="handlepagetitles" onClick={()=>{this.redirectfunc('/about')}}>
-                    <span className="textshadowset">ABOUT_ME</span>
+                  <SideBarItemAbout page={this.state.lightlocation} className="handlepagetitles" onClick={()=>{this.redirectfunc('/about')}}>
+                    &#9;<span className="textshadowset">ABOUT_ME</span>
                   </SideBarItemAbout>
-                  <SideBarItemContact page={this.state.currentpage} className="handlepagetitles" onClick={()=>{this.redirectfunc('/contact')}}>
-                    <span className="textshadowset">CONTACT_LASER</span>
+                  <SideBarItemContact page={this.state.lightlocation} className="handlepagetitles" onClick={()=>{this.redirectfunc('/contact')}}>
+                    &#9;<span className="textshadowset">CONTACT_LASER</span>
                   </SideBarItemContact>
                   <div className='handlenonpagetitles'>
                     <span className='textshadowset'>
@@ -1030,13 +1181,13 @@ class App extends Component{
                   </div>
                   <div className="handlepagetitles"
                   onClick={()=>{this.windowopener('https://www.linkedin.com/in/peterweyand/', 'false')}}>
-                    <span className='textshadowset'>
+                    &#9;<span className='textshadowset'>
                       LINKEDIN_NEBULA
                     </span>
                   </div>
                   <div className="handlepagetitles"
                   onClick={()=>{this.windowopener('https://github.com/patientplatypus', 'false')}}>
-                    <span className='textshadowset'>
+                    &#9;<span className='textshadowset'>
                       GITHUB_QUADRANT
                     </span>
                   </div>
@@ -1052,7 +1203,6 @@ class App extends Component{
                   </div>
                 </TerminalContainer>
                 <TerminalContainer top={`75%`} left={`0%`} height={'25%'} z={2}>
-
                   <PositionRelative>
                     <div className="casetteoutline boxshadoworange"></div>
                     <div className="casettecircle1 boxshadoworange"></div>
@@ -1274,7 +1424,6 @@ class App extends Component{
                   </PositionRelative>
                 </TerminalContainer>
               </Terminal>
-
             </GridBoxSideBar>
             <GridBoxSideBarOverlay/>
             <OverflowBox ref={ (overflowbox) => this.overflowbox = overflowbox}>
@@ -1292,7 +1441,6 @@ class App extends Component{
               </Router>
             </OverflowBox>
           </GridBigContainer>
-
           </div>
     )
   }

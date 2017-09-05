@@ -143,24 +143,74 @@
   left: 30% !important;
 }
 
-.transformhoop21{
-  transform: scale(.6,1);
-  left: 25%;
+.hoop2transformhoop21{
+  position: absolute;
+  top: 13%;
+  left: 35.5%;
+  height: 1%;
+  width: 1%;
+  border-width: 1.5vh;
+  border-left-width: 0;
+  border-style: solid;
+  border-color: rgba(10,30,150,1);
+  border-bottom-right-radius: 50%;
+  border-left-width: 0;
+  background-color: transparent;
+  transform: scale(.6, -1) !important;
+  left: 25% !important;
 }
 
-.transformhoop31{
-  transform: scale(-1,1);
-  left: 6.5%;
+
+
+.hoop2transformhoop31{
+  position: absolute;
+  top: 13%;
+  left: 35.5%;
+  height: 1%;
+  width: 1%;
+  border-width: 1.5vh;
+  border-left-width: 0;
+  border-style: solid;
+  border-color: rgba(10,30,150,1);
+  border-bottom-right-radius: 50%;
+  border-left-width: 0;
+  background-color: transparent;
+  transform: scale(-1, -1) !important;
+  left: 6.5% !important;
 }
 
-.transformhoop41{
-  transform: scale(-.8,1);
-  left: 12%;
+.hoop2transformhoop41{
+  position: absolute;
+  top: 13%;
+  left: 35.5%;
+  height: 1%;
+  width: 1%;
+  border-width: 1.5vh;
+  border-left-width: 0;
+  border-style: solid;
+  border-color: rgba(10,30,150,1);
+  border-bottom-right-radius: 50%;
+  border-left-width: 0;
+  background-color: transparent;
+  transform: scale(-.8, -1) !important;
+  left: 12% !important;
 }
 
-.transformhoop51{
-  transform: scale(-.6,1);
-  left: 17.5%;
+.hoop2transformhoop51{
+  position: absolute;
+  top: 13%;
+  left: 35.5%;
+  height: 1%;
+  width: 1%;
+  border-width: 1.5vh;
+  border-left-width: 0;
+  border-style: solid;
+  border-color: rgba(10,30,150,1);
+  border-bottom-right-radius: 50%;
+  border-left-width: 0;
+  background-color: transparent;
+  transform: scale(-.6, -1) !important;
+  left: 17.5% !important;
 }
 
 .teleportconsole{
@@ -790,20 +840,14 @@
   background-color: transparent;
   height: 20%;
   width: 20%;
-  border-width: 1%;
+  border-width: medium;
   border-color: rgba(200,100,0,1);
   border-style: solid;
-  /*left: 100%;
-  top: -130%;
-  height: 50%;
-  width: 50%;
-  background-color: red;
-  border-width: 10px;
-  border-color: rgba(200,100,0,1);
-  border-style: solid;*/
-  /*transform:rotate3d(0,1,0,-30deg);
-  -webkit-transform: rotate3d(0,1,0,-30deg);
-  -moz-transform: rotate3d(0,1,0,-30deg);*/
+  animation: animatetarget2 3s linear;
+  animation-iteration-count: 1;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  animation-fill-mode: forwards;
 }
 
 
@@ -815,7 +859,7 @@
   background-color: transparent;
   height: 10%;
   width: 10%;
-  border-width: 1%;
+  border-width: thin;
   border-color: rgba(200,100,0,1);
   border-style: solid;
   /*left: 100%;
@@ -840,9 +884,15 @@
   background-color: transparent;
   height: 10%;
   width: 10%;
-  border-width: 1%;
+  border-width: medium;
   border-color: rgba(200,100,0,1);
   border-style: solid;
+  z-index: 900;
+  animation: animatetarget2 3s linear;
+  animation-iteration-count: 1;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  animation-fill-mode: forwards;
 }
 
 .glowdisks1{
