@@ -412,6 +412,7 @@ class App extends Component{
       platypuskling: ['P', 'A', 'T', 'I', 'E', 'N', 'T', 'P', 'L', 'A', 'T', 'Y', 'P', 'U', 'S'],
       platypusklingindex: 0,
       playtape: false,
+      loadyoutube: false,
       songArray:['zJqLH8EA2rM', '0obpScUz_VE', 'mBRnh0tkQtU', 'FF7BXqCNcDE', 'AEN-sdRPuAQ'],
       songArrayName: ['Robert Parker: Crystal City', 'Anachronist: RGB', 'Waveshaper: Station Nova', 'She: Pioneer', 'Tycho: Descent'],
       songArrayIndex: 0,
@@ -426,6 +427,13 @@ class App extends Component{
     this.setState({
       lightlocation: history.location.pathname
     })
+
+    setTimeout(()=>{
+      this.setState({
+        loadyoutube: true
+      });
+    }, 2000);
+
     setInterval(()=>{
       if (this.state.platypusklingindex<=14){
         this.setState({
@@ -443,9 +451,6 @@ class App extends Component{
     setTimeout(()=>{
       this.StarFields();
     },400)
-    setTimeout(()=>{
-      // this.MakeCord();
-    },600)
   }
 
   MakeCord(){
@@ -741,11 +746,11 @@ class App extends Component{
     this.setState({
       player: event.target,
     });
-    this.state.player.pauseVideo();
+    this.state.player.playVideo();
   }
 
   onPlayVideo() {
-    this.state.player.playVideo();
+    console.log('value of this.state.player is ', this.state.player);
     this.setState({
       playtape: true
     })
@@ -1377,23 +1382,25 @@ class App extends Component{
                         <div className='casettecircle8'/>
                       </PositionRelative>
                     </div>
-                    <YouTube
-                      videoId={this.state.videoId}
-                      opts={opts}
-                      onReady={(e)=>this.onReady(e)}
-                      onEnd={()=>{
-                        if (this.state.songArrayIndex===this.state.songArrayIndex.length-1){
-                          this.setState({
-                            songArrayIndex: 0
-                          })
-                        }else{
-                          this.setState({
-                            songArrayIndex: this.state.songArrayIndex + 1
-                          })
-                        }
-                      }}
-                    />
-                    {renderIf(this.state.playtape===false && this.state.player!==null)(
+                    {renderIf(this.state.playtape===true)(
+                      <YouTube
+                        videoId={this.state.videoId}
+                        opts={opts}
+                        onReady={(e)=>this.onReady(e)}
+                        onEnd={()=>{
+                          if (this.state.songArrayIndex===this.state.songArrayIndex.length-1){
+                            this.setState({
+                              songArrayIndex: 0
+                            })
+                          }else{
+                            this.setState({
+                              songArrayIndex: this.state.songArrayIndex + 1
+                            })
+                          }
+                        }}
+                      />
+                    )}
+                    {renderIf(this.state.playtape===false)(
                       <div>
                         <div className='playbutton' onClick={()=>{this.onPlayVideo()}}>
                            ▶︎

@@ -18,6 +18,20 @@
   background-repeat: no-repeat;
 }*/
 
+.triangletitle{
+  position: absolute;
+  top: 13.5%;
+  left: 22%;
+  background-color: rgba(0,0,0,0.8);
+  padding: 2%;
+  font-size: 6vh;
+  border-radius: 0%;
+  font-family: 'virgo';
+  color: rgba(0,200,0,1);
+  font-weight: bold;
+}
+
+
 .triangle0:hover, .triangle1:hover, .triangle2:hover, .triangle3:hover, .triangle4:hover, .triangle5:hover{
   background: linear-gradient(148deg, rgba(0,0,0,.7), rgba(0,255,0,1));
   background-size: 1000% 1000%;
@@ -155,6 +169,12 @@
   width: 80%;
   height: 22%;
   animation: binarymove2 1.5s ease infinite;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
 
 .binary2{

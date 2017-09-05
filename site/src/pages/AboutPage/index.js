@@ -258,6 +258,7 @@ class AboutPage extends Component{
       triangle4clicked: false,
       triangle5clicked: false,
       jigsaw: 0,
+      hovertitle: '',
       fadeinrighttextbox: false,
       flyhexagons: true,
       imgmodal: null,
@@ -355,6 +356,20 @@ class AboutPage extends Component{
           flyhexagons: true
         })
       },1100)
+    })
+  }
+
+  hoverenter(index){
+    var titlearray = ['University Education', 'Work: Federal Reserve', 'Work: Capital One', 'World Travel', 'Coding Education', 'Favorite Books']
+
+    this.setState({
+      hovertitle: titlearray[index]
+    })
+  }
+
+  hoverleave(index){
+    this.setState({
+      hovertitle: ''
     })
   }
 
@@ -518,23 +533,28 @@ class AboutPage extends Component{
           <AbsoluteContainer z={21}>
             <PositionRelative>
               {renderIf(this.state.triangle0clicked===false)(
-                <EquilateralTriangle onClick={()=>{this.triangleclicked(0)}} className='triangle0' size={.04*window.innerWidth}  top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(0deg)`}/>
+                <EquilateralTriangle onClick={()=>{this.triangleclicked(0)}} className='triangle0' onMouseEnter={()=>this.hoverenter(0)} onMouseLeave={()=>this.hoverleave()}  size={.04*window.innerWidth}  top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(0deg)`}/>
               )}
               {renderIf(this.state.triangle1clicked===false)(
-                <EquilateralTriangle onClick={()=>{this.triangleclicked(1)}} className='triangle1' size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(60deg)`}/>
+                <EquilateralTriangle onClick={()=>{this.triangleclicked(1)}} className='triangle1' onMouseEnter={()=>this.hoverenter(1)} onMouseLeave={()=>this.hoverleave()}  size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(60deg)`}/>
               )}
               {renderIf(this.state.triangle2clicked===false)(
-                <EquilateralTriangle onClick={()=>{this.triangleclicked(2)}} className='triangle2' size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(120deg)`}/>
+                <EquilateralTriangle onClick={()=>{this.triangleclicked(2)}} className='triangle2' onMouseEnter={()=>this.hoverenter(2)} onMouseLeave={()=>this.hoverleave()}  size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(120deg)`}/>
               )}
               {renderIf(this.state.triangle3clicked===false)(
-                <EquilateralTriangle onClick={()=>{this.triangleclicked(3)}} className='triangle3' size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(180deg)`}/>
+                <EquilateralTriangle onClick={()=>{this.triangleclicked(3)}} className='triangle3' onMouseEnter={()=>this.hoverenter(3)} onMouseLeave={()=>this.hoverleave()}  size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(180deg)`}/>
               )}
               {renderIf(this.state.triangle4clicked===false)(
-                <EquilateralTriangle onClick={()=>{this.triangleclicked(4)}} className='triangle4' size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(240deg)`}/>
+                <EquilateralTriangle onClick={()=>{this.triangleclicked(4)}} className='triangle4' onMouseEnter={()=>this.hoverenter(4)} onMouseLeave={()=>this.hoverleave()}  size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(240deg)`}/>
               )}
               {renderIf(this.state.triangle5clicked===false)(
-                <EquilateralTriangle onClick={()=>{this.triangleclicked(5)}} className='triangle5' size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(300deg)`}/>
+                <EquilateralTriangle onClick={()=>{this.triangleclicked(5)}} className='triangle5' onMouseEnter={()=>this.hoverenter(5)} onMouseLeave={()=>this.hoverleave()} size={.04*window.innerWidth} top={.1*window.innerHeight} left={.1*window.innerWidth} transform={`rotate(300deg)`}/>
               )}
+
+              {/*
+                onMouseEnter={this.hoverenter(5)}
+                onMouseLeave={this.hoverleave()}
+                */}
 
               {renderIf(this.state.triangle0clicked===true)(
                 <Motion
@@ -750,7 +770,7 @@ class AboutPage extends Component{
                       Education - General Assembly
                     </h3>
                     <p>
-                      After traveling I decided to settle down in Austin, Texas and learn how to program. While seeing the world was a growing experience I felt unaccomplished and unproductive - I wanted to get back to my roots and start building mathy things again. I joined General Assembly and took a crash course and web development, but my love for analytics goes all the way back to when I used to build computers in high school. Getting into the community of Austin was challenging and General Assembly helped me make new friends here as well. While I am new to non-statistical or econometric development, I&#39;m growing quickly and am currently on the job market. The most important thing you should know about me is that you can hire me! If you or anyone you know has development work in the Austin area, and it looks like I might be a good fit, feel free to contact me, either by the contact page, or by email at pweyand(at)gmail.com
+                      After traveling I decided to settle down in Austin, Texas and learn how to program. While seeing the world was a growing experience I felt that I could do more - I wanted to get back to my roots and start building mathy things again. I joined General Assembly and took a crash course in web development, but my love for analytics goes all the way back to when I used to build computers in high school. Getting into the community of Austin was challenging and General Assembly helped me make new friends here as well. While I am new to non-statistical or econometric development, I&#39;m growing quickly and am currently on the job market. The most important thing you should know about me is that you can hire me! If you or anyone you know has development work in the Austin area, and it looks like I might be a good fit, feel free to contact me, either by the contact page, or by email at pweyand(at)gmail.com
                     </p>
                   </div>
                 </PositionRelative>
@@ -846,6 +866,15 @@ class AboutPage extends Component{
           </AbsoluteContainer>
           <AbsoluteContainer style={styles.pointerEvents} z={3}>
             <img style={styles.image} src={spacepic1}/>
+          </AbsoluteContainer>
+          <AbsoluteContainer z={99} style={styles.pointerEvents}>
+            {renderIf(this.state.hovertitle!='')(
+              <div>
+                <div className='triangletitle'>
+                  {this.state.hovertitle}
+                </div>
+              </div>
+            )}
           </AbsoluteContainer>
         </div>
     )

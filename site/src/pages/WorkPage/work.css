@@ -3,6 +3,12 @@
     src: url('../../fonts/Virgo-01/virgo.ttf');
 }
 
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 .headers{
   font-family: 'virgo';
   font-size: 3vh;
@@ -329,6 +335,20 @@
   border-radius: 45%;
   background-color: rgba(60,105,165,1);
   box-shadow: inset 0 0 1vw 0.23vw rgba(5,0,162,0.9);
+}
+
+.loadinggif{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 99%;
+  width: 95%;
+  z-index: 670;
+  border-bottom-right-radius: 40%;
+  background-image: url('../../images/loadinggifsmall.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .circuitholder{

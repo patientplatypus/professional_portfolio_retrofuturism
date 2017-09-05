@@ -423,6 +423,7 @@ const PictureFrame = glamorous.div(
   },
   ({background})=>({
     background: background,
+    backgroundPosition: '50% 50%',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
@@ -492,242 +493,362 @@ class WorkPage extends Component{
     }
     if (this.state.projectactive===0){
       if (this.state.trianglenumber===0){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
-          this.setState({
-            nexttrianglenumber: 1,
-            pictureframe: bgImg.src
-          })
-        };
-        bgImg.src = live0;
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
+        this.setState({
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 1,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = live0;
+        })
       }else if(this.state.trianglenumber===1){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
-          this.setState({
-            nexttrianglenumber: 2,
-            pictureframe: bgImg.src
-          })
-        };
-        bgImg.src = live1
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
+        this.setState({
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 2,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = live1
+        })
       }else if(this.state.trianglenumber===2){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
-          this.setState({
-            nexttrianglenumber: 0,
-            pictureframe: bgImg.src
-          })
-        };
-        bgImg.src = live2;
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
+        this.setState({
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 0,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = live2;
+        })
       }
     }
     if (this.state.projectactive===1){
       if (this.state.trianglenumber===0){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
-          this.setState({
-            nexttrianglenumber: 1,
-            pictureframe: bgImg.src
-          })
-        };
-        bgImg.src = finance0;
-      }else if(this.state.trianglenumber===1){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 2,
-          pictureframe: bgImg.src
-          })
-        };
-        bgImg.src = finance1;
-      }else if(this.state.trianglenumber===2){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
-        this.setState({
-          nexttrianglenumber: 0,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 1,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = finance0;
         })
-        };
-        bgImg.src = finance2;
+      }else if(this.state.trianglenumber===1){
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
+        this.setState({
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 2,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = finance1;
+        })
+      }else if(this.state.trianglenumber===2){
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
+        this.setState({
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 0,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = finance2;
+        })
       }
     }
     if (this.state.projectactive===2){
       if (this.state.trianglenumber===0){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 1,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 1,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = tracker0;
         })
-      };
-      bgImg.src = tracker0;
       }else if(this.state.trianglenumber===1){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 2,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 2,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = tracker1;
         })
-      };
-      bgImg.src = tracker1;
       }else if(this.state.trianglenumber===2){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 0,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 0,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = tracker2;
         })
-      };
-      bgImg.src = tracker2;
       }
     }
     if (this.state.projectactive===3){
       if (this.state.trianglenumber===0){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 1,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 1,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = kiwi0;
         })
-      };
-      bgImg.src = kiwi0;
       }else if(this.state.trianglenumber===1){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 2,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 2,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = kiwi1;
         })
-      };
-      bgImg.src = kiwi1;
       }else if(this.state.trianglenumber===2){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 0,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 0,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = kiwi2;
         })
-      };
-      bgImg.src = kiwi2;
       }
     }
     if (this.state.projectactive===4){
       if (this.state.trianglenumber===0){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 1,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 1,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = swapper0;
         })
-      };
-      bgImg.src = swapper0;
       }else if(this.state.trianglenumber===1){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 2,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 2,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = swapper1;
         })
-      };
-      bgImg.src = swapper1;
       }else if(this.state.trianglenumber===2){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 0,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 0,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = swapper2;
         })
-      };
-      bgImg.src = swapper2;
       }
     }
     if (this.state.projectactive===5){
       if (this.state.trianglenumber===0){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 1,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 1,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = port10;
         })
-      };
-      bgImg.src = port10;
       }else if(this.state.trianglenumber===1){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 2,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 2,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = port11;
         })
-      };
-      bgImg.src = port11;
       }else if(this.state.trianglenumber===2){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 0,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 0,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = port12;
         })
-      };
-      bgImg.src = port12;
       }
     }
     if (this.state.projectactive===6){
       if (this.state.trianglenumber===0){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 1,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 1,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = port20;
         })
-      };
-      bgImg.src = port20;
       }else if(this.state.trianglenumber===1){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 2,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 2,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = port21;
         })
-      };
-      bgImg.src = port21;
       }else if(this.state.trianglenumber===2){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 0,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 0,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = port22;
         })
-      };
-      bgImg.src = port22;
       }
     }
     if (this.state.projectactive===7){
       if (this.state.trianglenumber===0){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 1,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 1,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = small0;
         })
-      };
-      bgImg.src = small0;
       }else if(this.state.trianglenumber===1){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 2,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 2,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = small1;
         })
-      };
-      bgImg.src = small1;
       }else if(this.state.trianglenumber===2){
-        var bgImg = new Image();
-        bgImg.onload = ()=>{
+        console.log('inside project ', this.state.projectactive, ' and trianglenumber ', this.state.trianglenumber, ' and the value of pictureframe is ', this.state.pictureframe);
         this.setState({
-          nexttrianglenumber: 0,
-          pictureframe: bgImg.src
+          pictureframe: null
+        }, ()=>{
+          var bgImg = new Image();
+          bgImg.onload = ()=>{
+            this.setState({
+              nexttrianglenumber: 0,
+              pictureframe: bgImg.src
+            })
+          };
+          bgImg.src = small2;
         })
-      };
-      bgImg.src = small2;
       }
     }
     return(<div></div>)
@@ -834,6 +955,7 @@ class WorkPage extends Component{
         {renderIf(this.state.projectactive!==-1)(
           <div className='pictureholder' onClick={()=>{console.log('clicked pictureholder');}}>
             <div className='positionrelative' onClick={()=>{console.log('clicked picturerelative');}}>
+              <div className='loadinggif'/>
               <PictureFrame onClick={()=>{console.log('clicked pictureframe');}} background={`url(${this.state.pictureframe})`}/>
               <Triangle1 onClick={()=>{this.triangleclicked(0)}} triangle={this.state.trianglenumber}/>
               <Triangle2 onClick={()=>{this.triangleclicked(1)}} triangle={this.state.trianglenumber}/>

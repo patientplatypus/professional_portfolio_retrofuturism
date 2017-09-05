@@ -3,6 +3,10 @@
     src: url('../../fonts/Distant-Galaxy/DISTGRG_.ttf');
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 
 .jupiter{
   position: absolute;

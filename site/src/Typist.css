@@ -440,6 +440,12 @@ a.atagterminal:visited {
   z-index: 2;
 }
 
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 .circleoverlay2{
   position: absolute;
   top: 12%;

@@ -39,6 +39,12 @@
 }
 
 
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
 .teleporterbase2{
   position: absolute;
   top: 70%;

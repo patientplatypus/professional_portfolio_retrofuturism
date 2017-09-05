@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
